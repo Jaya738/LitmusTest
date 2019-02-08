@@ -1,3 +1,264 @@
+/* Styling PH Meter*/
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+
+body,
+.dial
+{
+    background-color: #000;
+    overflow: hidden;
+}
+
+.gauge
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 30px;
+    left: 50%;
+    margin-left: -250px;
+    border-radius: 100%;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform: rotate(0deg);
+
+}
+
+.meter
+{
+    margin: 0;
+    padding: 0;
+}
+
+.meter > li
+{
+    width: 250px;
+    height: 250px;
+    list-style-type: none;
+    position: absolute;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 0px;
+    transform-origin:  100% 100%;;
+    -webkit-transform-origin:  100% 100%;;
+    -ms-transform-origin:  100% 100%;;
+    transition-property: -webkit-transform;
+    pointer-events: none;
+}
+
+.meter .level0
+{
+    transform: rotate(10deg); /* W3C */
+    -webkit-transform: rotate(10deg); /* Safari & Chrome */
+    -moz-transform: rotate(10deg); /* Firefox */
+    -ms-transform: rotate(10deg); /* Internet Explorer */
+    -o-transform: rotate(10deg); /* Opera */
+    z-index: 8;
+    background-color: #ED1C24;
+}
+
+.meter .level1
+{
+    transform: rotate(20deg); /* W3C */
+    -webkit-transform: rotate(20deg); /* Safari & Chrome */
+    -moz-transform: rotate(20deg); /* Firefox */
+    -ms-transform: rotate(20deg); /* Internet Explorer */
+    -o-transform: rotate(20deg); /* Opera */
+    z-index: 7;
+    background-color: #FFA500;
+}
+
+.meter .level2
+{
+    transform: rotate(30deg); /* W3C */
+    -webkit-transform: rotate(30deg); /* Safari & Chrome */
+    -moz-transform: rotate(30deg); /* Firefox */
+    -ms-transform: rotate(30deg); /* Internet Explorer */
+    -o-transform: rotate(30deg); /* Opera */
+    z-index: 6;
+    background-color: #FFD700;
+}
+
+.meter .level3
+{
+    transform: rotate(40deg); /* W3C */
+    -webkit-transform: rotate(40deg); /* Safari & Chrome */
+    -moz-transform: rotate(40deg); /* Firefox */
+    -ms-transform: rotate(40deg); /* Internet Explorer */
+    -o-transform: rotate(40deg); /* Opera */
+    z-index: 6;
+    background-color: #FFFF00;
+}
+.meter .level4
+{
+    transform: rotate(50deg); /* W3C */
+    -webkit-transform: rotate(50deg); /* Safari & Chrome */
+    -moz-transform: rotate(50deg); /* Firefox */
+    -ms-transform: rotate(50deg); /* Internet Explorer */
+    -o-transform: rotate(50deg); /* Opera */
+    z-index: 8;
+    background-color:#ADFF2F
+    ;
+}
+.meter .level5
+{
+    transform: rotate(60deg); /* W3C */
+    -webkit-transform: rotate(60deg); /* Safari & Chrome */
+    -moz-transform: rotate(60deg); /* Firefox */
+    -ms-transform: rotate(60deg); /* Internet Explorer */
+    -o-transform: rotate(60deg); /* Opera */
+    z-index: 8;
+    background-color: #6B8E23
+    ;
+}
+.meter .level6
+{
+    transform: rotate(70deg); /* W3C */
+    -webkit-transform: rotate(70deg); /* Safari & Chrome */
+    -moz-transform: rotate(70deg); /* Firefox */
+    -ms-transform: rotate(70deg); /* Internet Explorer */
+    -o-transform: rotate(70deg); /* Opera */
+    z-index: 8;
+    background-color: #32CD32
+
+    ;
+}
+.meter .level7
+{
+    transform: rotate(80deg); /* W3C */
+    -webkit-transform: rotate(80deg); /* Safari & Chrome */
+    -moz-transform: rotate(80deg); /* Firefox */
+    -ms-transform: rotate(80deg); /* Internet Explorer */
+    -o-transform: rotate(80deg); /* Opera */
+    z-index: 8;
+    background-color: #228B22
+
+    ;
+}
+.meter .level8
+{
+    transform: rotate(90deg); /* W3C */
+    -webkit-transform: rotate(90deg); /* Safari & Chrome */
+    -moz-transform: rotate(90deg); /* Firefox */
+    -ms-transform: rotate(90deg); /* Internet Explorer */
+    -o-transform: rotate(90deg); /* Opera */
+    z-index: 8;
+    background-color: #00FF7F
+
+    ;
+}
+.meter .level9
+{
+    transform: rotate(100deg); /* W3C */
+    -webkit-transform: rotate(100deg); /* Safari & Chrome */
+    -moz-transform: rotate(100deg); /* Firefox */
+    -ms-transform: rotate(100deg); /* Internet Explorer */
+    -o-transform: rotate(100deg); /* Opera */
+    z-index: 8;
+    background-color: #00BFFF
+
+    ;
+}
+.meter .level10
+{
+    transform: rotate(110deg); /* W3C */
+    -webkit-transform: rotate(110deg); /* Safari & Chrome */
+    -moz-transform: rotate(110deg); /* Firefox */
+    -ms-transform: rotate(110deg); /* Internet Explorer */
+    -o-transform: rotate(110deg); /* Opera */
+    z-index: 8;
+    background-color: #4682B4
+
+
+    ;
+}
+.meter .level11
+{
+    transform: rotate(120deg); /* W3C */
+    -webkit-transform: rotate(120deg); /* Safari & Chrome */
+    -moz-transform: rotate(120deg); /* Firefox */
+    -ms-transform: rotate(120deg); /* Internet Explorer */
+    -o-transform: rotate(120deg); /* Opera */
+    z-index: 8;
+    background-color: #4169E1
+
+
+
+    ;
+}
+.meter .level12
+{
+    transform: rotate(100deg); /* W3C */
+    -webkit-transform: rotate(100deg); /* Safari & Chrome */
+    -moz-transform: rotate(100deg); /* Firefox */
+    -ms-transform: rotate(100deg); /* Internet Explorer */
+    -o-transform: rotate(100deg); /* Opera */
+    z-index: 8;
+    background-color: #6A5ACD
+
+
+    ;
+}
+
+
+.dial,
+.dial .inner
+{
+    width: 470px;
+    height: 470px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    border-radius: 100%;
+    border-color: purple;
+    z-index: 10;
+    transition-property: -webkit-transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(0deg); /* W3C */
+    -webkit-transform: rotate(0deg); /* Safari & Chrome */
+    -moz-transform: rotate(0deg); /* Firefox */
+    -ms-transform: rotate(0deg); /* Internet Explorer */
+    -o-transform: rotate(0deg); /* Opera */
+}
+
+.dial .arrow
+{
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    top: 214px;
+    left: 24px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 32px solid #FFFFFF;
+    -webkit-transform: rotate(-88deg); /* Safari & Chrome */
+    -moz-transform: rotate(88deg); /* Firefox */
+    -ms-transform: rotate(88deg); /* Internet Explorer */
+    -o-transform: rotate(88deg); /* Opera */
+
+}
+
+.gauge .value
+{
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    top: 142px;
+    left: 45%;
+    z-index: 11;
+}
+
+
+
+
+
+
+
 /*-----------------------------------------------------------------------------------
 CSS INDEX
 ===================
@@ -889,3 +1150,5 @@ preloader
         opacity: 0;
     }
 }
+
+

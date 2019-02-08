@@ -32,7 +32,38 @@
         <div class="absolute anlge-bg"></div>
         <div class="container">
             <div class="row v-center">
-                
+                <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+        <div class="gauge">
+			<ul class="meter">
+				<li class="level0"></li>
+				<li class="level1"></li>
+                <li class="level2"></li>
+                <li class="level3"></li>
+                <li class="level4"></li>
+				<li class="level5"></li>
+                <li class="level6"></li>
+                <li class="level7"></li>
+                <li class="level8"></li>
+				<li class="level9"></li>
+                <li class="level10"></li>
+                <li class="level11"></li>
+			</ul>
+
+			<div class="dial">
+					<div class="inner">
+						<div class="arrow">
+						</div>
+					</div>			
+			</div>
+
+			<div class="value">
+				0%
+			</div>
+
+		</div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    
                 
                 <div class="row v-center">
                     <div class="col-xs-12 col-md-12 header-text">
@@ -42,6 +73,29 @@
             </div>
         </div>
     </header>
+<script>
+
+var dial = $(".dial .inner");
+var gauge_value = $(".gauge .value");
+
+    function rotateDial()
+    {
+        var deg = 0;
+        var value = 7;
+        deg = (value * 177.5) / 100;
+
+        gauge_value.html("PH = "+value);
+
+        dial.css({'transform': 'rotate('+deg+'deg)'});
+        dial.css({'-ms-transform': 'rotate('+deg+'deg)'});
+        dial.css({'-moz-transform': 'rotate('+deg+'deg)'});
+        dial.css({'-o-transform': 'rotate('+deg+'deg)'}); 
+        dial.css({'-webkit-transform': 'rotate('+deg+'deg)'});
+    }
+
+    setInterval(rotateDial, 2000);
+</script>
+
 </body>
 
 </html>
