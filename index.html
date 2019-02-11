@@ -6,12 +6,24 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <title>e-litmus</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/beaker.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="phmeter.js"></script>
+    <style>
+        .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: black;
+
+    }
+    </style>
+>>>>>>> 3e618f7476c8ad1419c0edbbe14aee8d22ef6356
 </head>
 
 <body background="images/BackgroundImg.jpg" >
@@ -31,19 +43,38 @@
         <div class="absolute anlge-bg"></div>
         <div class="container">
             <div class="row v-center">
-                <div class="col-xs-12 col-md-7 header-text">
+                                
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ACIDS
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" onclick="HCL()" href="#">HCL</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" onclick="NACl()" href="#">NACL</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" onclick="KCL()" href="#">KCL</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" onclick="ZNCL()" href="#">ZNCL</a>
+  </div>
+</div>
 
-                  <h2>Select the Acids and Bases..</h2>
-                  <a href="#" class="button" onclick="HCL()">HCL</a>
-                  <a href="#" class="button" onclick="H2SO4()">H2SO4</a>
-                  <br>
-                  <a href="#" class="button" onclick="NaCl()">NaCl</a>
-                  <a href="#" class="button" onclick="NaOH()">NaOH</a>
-                  <br>
-                  <br>
 
-                    
-                  </div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    BASES
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">NAOH</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">KOH</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">ZNOH</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">LIOH</a>
+  </div>
+</div>
+           </div>
                 <div class="hidden-xs hidden-sm col-md-5 text-right">
                     <div id="container">
                         <div id="beaker">
@@ -72,8 +103,25 @@
     <!--Header-area/-->
    
     <script src="js/main.js"></script>
-    <script>
+    <script>  
         
+function HCL(){
+    document.getElementById("liquid").style.backgroundColor="red";
+   
+    return value=4;
+}
+function H2SO4() {
+        document.getElementById("liquid").style.backgroundColor = "yellow";
+        return value=6;
+    }
+function NaCl() {
+        document.getElementById("liquid").style.backgroundColor = "violet";
+        return value=8;
+    }
+function NaOH() {
+        document.getElementById("liquid").style.backgroundColor = "orange";
+        return value=10;
+    }
     </script>
     
 </body>
