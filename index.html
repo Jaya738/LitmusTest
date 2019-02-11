@@ -51,13 +51,13 @@
     ACIDS
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">HCL</a>
+    <a class="dropdown-item" onclick="HCL()" href="#">HCL</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">NACL</a>
+    <a class="dropdown-item" onclick="NACl()" href="#">NACL</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">KCL</a>
+    <a class="dropdown-item" onclick="KCL()" href="#">KCL</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">ZNCL</a>
+    <a class="dropdown-item" onclick="ZNCL()" href="#">ZNCL</a>
   </div>
 </div>
 
@@ -109,13 +109,13 @@
         function HCL(){
             document.getElementById("liquid").style.backgroundColor="red";
         }
-        function H2SO4() {
+        function NACl() {
                 document.getElementById("liquid").style.backgroundColor = "yellow";
             }
-        function NaCl() {
+        function KCL() {
                 document.getElementById("liquid").style.backgroundColor = "violet";
             }
-        function NaOH() {
+        function ZNCL() {
                 document.getElementById("liquid").style.backgroundColor = "orange";
             }
     </script>
