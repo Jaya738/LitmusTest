@@ -6,11 +6,24 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <title>e-litmus</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/beaker.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <style>
+        .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: black;
+
+}
+    </style>
 </head>
 
 <body background="images/BackgroundImg.jpg" >
@@ -32,11 +45,37 @@
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
                     <h2>Select the Acids and Bases..</h2>
-                    <a href="#" class="button" onclick="HCL()">HCL</a>
-                    <a href="#" class="button" onclick="H2SO4()">H2SO4</a>
-                    <br>
-                    <a href="#" class="button" onclick="NaCl()">NaCl</a>
-                    <a href="#" class="button" onclick="NaOH()">NaOH</a>
+      <!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ACIDS
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">HCL</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">NACL</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">KCL</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">ZNCL</a>
+  </div>
+</div>
+
+
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    BASES
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">NAOH</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">KOH</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">ZNOH</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">LIOH</a>
+  </div>
+</div>
                     <br>
                     <br>
                 </div>
