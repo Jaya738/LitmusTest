@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/beaker.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="phmeter.js"></script>
 </head>
 
 <body background="images/BackgroundImg.jpg" >
@@ -31,15 +32,18 @@
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
-                    <h2>Select the Acids and Bases..</h2>
-                    <a href="#" class="button" onclick="HCL()">HCL</a>
-                    <a href="#" class="button" onclick="H2SO4()">H2SO4</a>
-                    <br>
-                    <a href="#" class="button" onclick="NaCl()">NaCl</a>
-                    <a href="#" class="button" onclick="NaOH()">NaOH</a>
-                    <br>
-                    <br>
-                </div>
+
+                  <h2>Select the Acids and Bases..</h2>
+                  <a href="#" class="button" onclick="HCL()">HCL</a>
+                  <a href="#" class="button" onclick="H2SO4()">H2SO4</a>
+                  <br>
+                  <a href="#" class="button" onclick="NaCl()">NaCl</a>
+                  <a href="#" class="button" onclick="NaOH()">NaOH</a>
+                  <br>
+                  <br>
+
+                    
+                  </div>
                 <div class="hidden-xs hidden-sm col-md-5 text-right">
                     <div id="container">
                         <div id="beaker">
@@ -57,29 +61,21 @@
                 </div>
                 <div class="row v-center">
                     <div class="col-xs-12 col-md-12 header-text">
-                        <a href="./result.html" class="button">Check Litmus </a>
+                        <a href="./result.html" onclick="phmetervalue()"class="button">Check Litmus </a>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </header>
     <!--Header-area/-->
    
     <script src="js/main.js"></script>
     <script>
-        function HCL(){
-            document.getElementById("liquid").style.backgroundColor="red";
-        }
-        function H2SO4() {
-                document.getElementById("liquid").style.backgroundColor = "yellow";
-            }
-        function NaCl() {
-                document.getElementById("liquid").style.backgroundColor = "violet";
-            }
-        function NaOH() {
-                document.getElementById("liquid").style.backgroundColor = "orange";
-            }
+        
     </script>
+    
 </body>
 
 </html>

@@ -29,6 +29,7 @@
     "parallelshell": "^3.0.2"
   },
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "canvas": "^2.2.0"
   }
 }

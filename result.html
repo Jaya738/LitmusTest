@@ -47,6 +47,10 @@
 				<li class="level9"></li>
                 <li class="level10"></li>
                 <li class="level11"></li>
+                <li class="level12"></li>
+                <li class="level13"></li>
+                <li class="level14"></li>
+                <li class="level14"></li>
 			</ul>
 
 			<div class="dial">
@@ -82,9 +86,9 @@ var gauge_value = $(".gauge .value");
     {
         var deg = 0;
         var value = 7;
-        deg = (value * 177.5) / 100;
+        deg = value*10+5;
 
-        gauge_value.html("PH = "+value);
+        gauge_value.html(" PH_Value="+value);
 
         dial.css({'transform': 'rotate('+deg+'deg)'});
         dial.css({'-ms-transform': 'rotate('+deg+'deg)'});
