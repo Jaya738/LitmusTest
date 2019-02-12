@@ -16,14 +16,13 @@
     <link rel="stylesheet" type="text/css" href="css/beaker.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
-        .dropdown-menu {
+    .dropdown-menu {
   display: none;
   position: absolute;
   background-color: black;
 
     }
     </style>
->>>>>>> 3e618f7476c8ad1419c0edbbe14aee8d22ef6356
 </head>
 
 <body background="images/BackgroundImg.jpg" >
@@ -43,39 +42,42 @@
         <div class="absolute anlge-bg"></div>
         <div class="container">
             <div class="row v-center">
-                                
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    ACIDS
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" onclick="HCL()" href="#">HCL</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" onclick="NACl()" href="#">NACL</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" onclick="KCL()" href="#">KCL</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" onclick="ZNCL()" href="#">ZNCL</a>
-  </div>
-</div>
-
-
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    BASES
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">NAOH</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">KOH</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">ZNOH</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">LIOH</a>
-  </div>
-</div>
-           </div>
-                <div class="hidden-xs hidden-sm col-md-5 text-right">
+              <div class="col-md-7">
+              <div class="btn-group">
+                <h1>Select Acids and Bases.....</h1>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ACIDS
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick="HCL()" href="#">HCL</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" onclick="NACl()" href="#">NACL</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" onclick="KCL()" href="#">KCL</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" onclick="ZNCL()" href="#">ZNCL</a>
+                </div>
+              </div>   
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  BASES
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">NAOH</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">KOH</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">ZNOH</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">LIOH</a>
+                </div>
+              </div>
+                 <br>
+                 <br>
+                 <br>
+                <br>
+                </div>
+                <div class="col-md-5 text-right">
                     <div id="container">
                         <div id="beaker">
                           <div id="liquid">
@@ -90,11 +92,14 @@
                         </div>
                       </div>              
                 </div>
-                <div class="row v-center">
-                    <div class="col-xs-12 col-md-12 header-text">
-                        <a href="./result.html" onclick="phmetervalue()"class="button">Check Litmus </a>
-                    </div>
+              
+            </div>
+            <div class="row v-center ">
+              <div class="col-md-4"></div>
+                <div class="col-xs-12 col-md-4 header-text">
+                    <a href="./result.html" class="button">Check Litmus </a>
                 </div>
+                <div class="col-md-4"></div>
             </div>
         </div>
 
