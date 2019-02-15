@@ -28,29 +28,26 @@
 <body background="images/BackgroundImg.jpg" >
     <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
         <div class="container">
-            <!--Logo-->
             <div class="navbar-header">
                 <a href="#" class="navbar-brand logo">
-                    <h2>E-LITMUS</h2>
+                    <h1><font size="6">E-LITMUS</font></h1>
                 </a>
             </div>
         </div>
     </div>
-    <!--Mainmenu-area/-->
-    <!--Header-area-->
+
     <header class="header-area overlay full-height relative v-center" id="home-page">
         <div class="absolute anlge-bg"></div>
         <div class="container">
-            <div class="row v-center">
-              <div class="col-md-7">
-                  <h1>Select Acids and Bases.....</h1>
-              <div class="btn-group">
-                
-                <br>
-                <button type="button" class="btn btn-lg btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ACIDS
-                </button>
-                <div class="dropdown-menu">
+            <div class="row align-bottom">
+              <div class="col col-md-4 col-sm-4">
+                  <h1>Select Acids and Bases</h1>
+                <div class="btn-group">
+                    <br>
+                    <button type="button" class="btn btn-lg btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ACIDS
+                    </button>
+                    <div class="dropdown-menu">
                     <a class="dropdown-item" onclick="HCL()" href="#">HCL</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" onclick="HNO3()" href="#">HNO3</a>
@@ -90,12 +87,8 @@
                     <a class="dropdown-item" onclick="ZincH()" href="#">ZN(OH)2</a>
                 </div>
               </div>
-                 <br>
-                 <br>
-                 <br>
-                <br>
                 </div>
-                <div class="col-md-5 text-right">
+                <div class="col-md-3 col-sm-3 text-right">
                     <div id="container">
                         <div id="beaker">
                           <div id="liquid">
@@ -110,27 +103,26 @@
                         </div>
                       </div>              
                 </div>
+                <div class="col col-sm col-md"></div>
               
             </div>
-            <div class="row v-center ">
+            <div class="row v-bottom">
               <div class="col-md-4">
-                  <svg width="90" height="30">
-                     
-                  </svg> 
+                
               </div>
                 <div class="col-xs-12 col-md-4 header-text">
                     <a href="#" class="button">Check Litmus </a>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-5">
+                    <!--- Add your Description Panel here --->
+                </div>
             </div>
         </div>
 
 
     </header>
-    <!--Header-area/-->
-   
-    <script src="js/main.js"></script>
-    <script>  
+<script src="js/main.js"></script>
+<script>  
         
 function HCL(){
     document.getElementById("liquid").style.backgroundColor="#D98880";
@@ -190,7 +182,7 @@ function CobaltH() {
 function ZincH() {
         document.getElementById("liquid").style.backgroundColor = "#808B96 ";
 }
-    </script>
+</script>
     
     
 </body>
