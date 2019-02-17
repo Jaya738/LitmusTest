@@ -9,6 +9,7 @@
     <title>e-litmus</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" type="text/css" href="css/beaker.css">
     <script src="js/main.js"></script>
 </head>
@@ -36,9 +37,9 @@
                         ACIDS
                         </button>
                         <div class="dropdown-menu">
-                        <a class="dropdown-item" onclick="HCL()" href="#HCL">HCL</a>
+                        <a class="dropdown-item ph3" onclick="HCL()" href="#HCL">HCL</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" onclick="HNO3()" href="#">HNO3</a>
+                        <a class="dropdown-item ph6" onclick="HNO3()" href="#">HNO3</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" onclick="H2SO4()" href="#">H2SO4</a>
                         <div class="dropdown-divider"></div>
@@ -93,16 +94,12 @@
                           </div>              
                     </div>
                 </div>
-                <div class="row">
-                    <h1>PH Meter</h1>
-
-		            <a id="controlButton" href="#" class="progress-button">PH Meter</a>
-
-		            <div class="control-area">
-		        	<a class="ph1">set ph=1</a>
-			        <a class="ph3">sET ph TO 3</a>
-			        <a class="ph6">Set PH=6</a>
-		            </div>
+                <div class="row top-buffer">
+                    <div class="col col-sm-12">
+                            <h1>PH Meter</h1>
+                            <a style="height:50px;width:500px" id="controlButton" href="#" class="progress-button"></a>
+                    </div>
+                    
                 </div>
                 
                 </div>
@@ -122,7 +119,8 @@
 
     </div>
 
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
