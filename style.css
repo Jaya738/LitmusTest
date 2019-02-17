@@ -42,6 +42,13 @@ body {
     height: 100%
 }
 
+#desc
+{
+
+    font-size: 18px;
+
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
