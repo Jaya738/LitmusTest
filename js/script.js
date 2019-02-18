@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-	// Convert all the links with the progress-button class to
-	// actual buttons with progress meters.
-	// You need to call this function once the page is loaded.
-	// If you add buttons later, you will need to call the function only for them.
 
 	$('.progress-button').progressInitialize();
 
@@ -13,22 +9,53 @@ $(document).ready(function(){
 
 	var controlButton = $('#controlButton');
 
-	$('.ph1').click(function(){
-
-		// Set the progress meter to the specified percentage
-
-		controlButton.progressSet(10);
-	});
-
-	$('.ph3').click(function(){
-		controlButton.progressSet(30);
-	});
-
-	$('.ph6').click(function(){
-
-		controlButton.progressSet(60);
-	});
-
+			$('.ph301').click(function(){
+		        controlButton.progressSet((100/14)*3.01);
+		    });
+		
+		    $('.ph275').click(function(){
+		        controlButton.progressSet((100/14)*2.75);
+		    });
+		
+		    $('.ph31').click(function(){
+		
+		        controlButton.progressSet((100/14)*3.1);
+		    });
+		
+		    $('.ph1dot3').click(function(){
+		        controlButton.progressSet((100/14)*1.3);
+		    });
+		
+		    $('.ph1066').click(function(){
+		        controlButton.progressSet((100/14)*10.66);
+		    });
+		
+		    $('.ph124').click(function(){
+		
+		        controlButton.progressSet((100/14)*124);
+		    });
+		
+		    $('.ph991').click(function(){
+		        controlButton.progressSet((100/14)*991);
+		    });
+		
+		    $('.ph8').click(function(){
+		        controlButton.progressSet((100/14)*8);
+		    });
+		
+		    $('.ph13').click(function(){
+		
+		        controlButton.progressSet((100/14)*13);
+		    });
+		
+		    $('.ph915').click(function(){
+		        controlButton.progressSet((100/14)*9.15);
+		    });
+		
+		    $('.ph9').click(function(){
+		        controlButton.progressSet((100/14)*9);
+		    });
+		
 });
 
 // The progress meter functionality is available as a series of plugins.
