@@ -32,11 +32,11 @@ $(document).ready(function(){
 		
 		    $('.ph124').click(function(){
 		
-		        controlButton.progressSet((100/14)*124);
+		        controlButton.progressSet((100/14)*12.4);
 		    });
 		
 		    $('.ph991').click(function(){
-		        controlButton.progressSet((100/14)*991);
+		        controlButton.progressSet((100/14)*9.91);
 		    });
 		
 		    $('.ph8').click(function(){
