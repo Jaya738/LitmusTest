@@ -24,7 +24,7 @@
   "devDependencies": {
     "lite-server": "^2.4.0",
     "nib": "^1.1.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "onchange": "^3.3.0",
     "parallelshell": "^3.0.2"
   },
